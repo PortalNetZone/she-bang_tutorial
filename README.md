@@ -9,9 +9,9 @@ Instructions:
 
 * Download and unpack this .zip file with "Extract to..." <file option>
 
-* Then, right-click on the folder and "Open With..." <terminal option>
-For Bash running terminals (i.e. Git Bash), just execute: ./.run-tuto
-For Windows PowerShell terminal run: sh ./.run-tuto
+* Then, right-click on the folder and "Open With..." <terminal option>\
+For Bash running terminals (i.e. Git Bash), just execute: `./.run-tuto`\
+For Windows PowerShell terminal run: `sh ./.run-tuto`
 
 Note: Don't worry about opening the tutorial. This process' going to auto-create a virtual environment for you, so the Python living in your system will keep untouchable.
 
