@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+echo "
+Starting...
+
+Hint: You can translate this page to your preferred language. If
+      you are in the Chrome browser, just click the mouse right
+      button on this web page, and select 'translate to <...>'
+
+Once the server is up, just press Ctrl+c to quit.
+
+Hold on. We're just setting things up for you...
+     "
+if [ -d .venv ]; then source .venv/bin/activate; else python -m venv .venv; fi
+source .venv/bin/activate
+python -m pip install -q --upgrade pip
+pip install -q -r .requirements.txt
+grip -b --title="Today let's see about She-Bang" --quiet tutorial.md 127.0.0.2
+echo "
+Quitting the server...
+     "
